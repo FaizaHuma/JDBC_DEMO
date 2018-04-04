@@ -22,7 +22,7 @@ public class JDBC_demo extends HttpServlet {
         try{
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
-            Connection con=DriverManager.getConnection(" jdbc:oracle:thin:@localhost:1521:orcl ","Computer_lab","computer_lab");
+            Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","Computer_lab","computer_lab");
             Statement stmt=con.createStatement();
             ResultSet rst=stmt.executeQuery("select*from computer_student");
 
